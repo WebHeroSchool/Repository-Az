@@ -1,12 +1,11 @@
 h1, div {
-  font-family: 'PT Serif', serif;
-  font-weight: Bold;
+	font-family: 'PT Serif', serif;
+	font-weight: bold;
 }
 a {
 	font-family: 'Roboto', sans-serif;
-  font-weight: Medium;
+ 	font-weight: 500;
 }
 p {
 	font-family: 'Roboto', sans-serif;
-  font-weight: Regular;
 }
