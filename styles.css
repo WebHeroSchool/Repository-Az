@@ -9,7 +9,7 @@ body {
   padding: 40px 0; 	
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
 .logo, .menu {
   display: inline-block;
@@ -26,7 +26,7 @@ body {
 .menu__item {
   position: relative;
   margin-right:26px;
-  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  font: 500 18.5px/21px Roboto, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity 0.5s;
@@ -47,20 +47,21 @@ body {
   padding-right: 0;
 }
 .main {
-  padding: 0 63% 100px 0;
+  padding: 0 66% 150px 0;
   background: top right no-repeat url(mainImg.svg); 
 }
 .main__title {
-  margin: 0 0 40px 0;
-  font: bold 50px/65px pt_serif, arial, helvetica, sans-serif;
+  padding-top: 70px;
+  margin: 0 0 37px 0;
+  font: bold 66px/87px PT_Serif, arial, helvetica, sans-serif;
 }
 .main__subtitle {
-  margin: 0 0 41px 0;
-  font: 18px/21px Roboto, arial, helvetica, sans-serif;
+  margin: 0 0 59px 0;
+  font: 24px/26px Roboto, arial, helvetica, sans-serif;
 }
 .main__button {
-  font: 14px/46px Roboto, arial, helvetica, sans-serif;
-  padding: 14px 16px;
+  font: 18px/21px Roboto, arial, helvetica, sans-serif;
+  padding: 18px 21px;
   text-decoration: none;
   color: #FFF;
   background: #0056EC;
