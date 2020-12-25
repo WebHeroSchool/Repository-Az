@@ -17,7 +17,7 @@ body {
 .logo {
   width: 190px;
   height: 35px;
-  background: url('img/logo.svg');
+  background: url(logo.svg);
   background-size: 9.9vw 1.81vw;
   background-repeat: no-repeat;
 }
@@ -50,7 +50,7 @@ body {
 }
 .main {
   padding: 0 66% 150px 0;
-  background: center right no-repeat url(img/mainImg.svg);
+  background: center right no-repeat url(mainImg.svg);
   background-size: 39.9vw 34.3vw;
 }
 .main__title {
