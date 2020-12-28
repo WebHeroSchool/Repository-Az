@@ -2,8 +2,7 @@ body {
   margin: 0;
 }
 .wrapper {
-  margin: auto;
-  width: 80%;
+  margin: 0 9.5% 0 10.3%;
 }
 .header {
   padding: 40px 0;
@@ -46,12 +45,12 @@ body {
   background: #0056EC;
 } 
 .menu__item:last-child {
-  margin-right: 0;
+  margin-right: 3px;
 }
 .main {
   padding: 0 66% 150px 0;
   background: center right no-repeat url(img/mainImg.svg);
-  background-size: 39.9vw 34.3vw;
+  background-size: 40vw 34.2vw;
 }
 .main__title {
   padding-top: 70px;
@@ -59,6 +58,7 @@ body {
   font: bold 3.423vw PT Serif, arial, helvetica, sans-serif;
 }
 .main__subtitle {
+  white-space: pre-line;
   margin: 0 0 59px 0;
   font: 1.142vw Roboto, arial, helvetica, sans-serif;
 }
