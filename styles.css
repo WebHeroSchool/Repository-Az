@@ -58,8 +58,8 @@ body {
   font: bold 3.423vw PT Serif, arial, helvetica, sans-serif;
 }
 .main__subtitle {
-  white-space: pre-line;
-  margin: 0 0 59px 0;
+  margin: 0 47px 59px -1px;
+  letter-spacing: 0.002vw;
   font: 1.142vw Roboto, arial, helvetica, sans-serif;
 }
 .main__button {
@@ -76,4 +76,116 @@ body {
 }
 .main__title-text_highlight {
   background: #ECF3FF;  
+}
+#menu__toggle {
+  opacity: 0;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: -28px;
+    padding: 25px 0 56px;
+  }
+  .logo {
+    width: 36px;
+    height: 35px;
+    margin-left: -15px;
+    margin-top: -1px;
+    background: url(img/logo.svg);
+  }
+  .main {
+    text-align: center; 
+    padding: 63.6% 0 0;
+    background-size: 93.2%;
+    background-position: top center;
+  }
+  .main__title {
+    margin-bottom: 33px;
+    margin-left: 2px;
+    font: bold 30px/39px PT Serif, arial, helvetica, sans-serif;
+  }
+  .main__subtitle {
+    white-space: pre-line;
+    margin: 0 10px 38px 12px;
+    font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+  }
+  .main__button {
+    padding: 3.5vw 5.6vw;
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  }
+  
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 7.4vw;
+    left: 86.8vw;
+    width: 25px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn > line,
+  .menu__btn > line::before,
+  .menu__btn > line::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0056EC;
+  }
+  .menu__btn > line::before {
+    content: '';
+    top: -6.8px;
+  }
+  .menu__btn > line::after {
+    content: '';
+    top: 6.8px;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 182px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+  }
+  
+  .menu__item {
+    display: block;
+    margin-bottom: 24px;
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    transition: opacity 0.5s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > line {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > line::before {
+    top: 0px;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > line::after {
+    top: 0px;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu {
+    visibility: visible;
+    left: 0;
+  } 
 }
